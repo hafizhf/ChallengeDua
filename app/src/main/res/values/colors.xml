@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <!--  Gojek Palette  -->
+    <color name="gojek_one">#00880C</color>
+    <color name="gojek_two">#0081A0</color>
+    <color name="gojek_three">#E9001E</color>
+    <color name="gojek_four">#494B4A</color>
+
+    <!--  Tokopedia Palette  -->
+    <color name="tokped_one">#20CE7D</color>
+    <color name="tokped_two">#3A3E43</color>
+    <color name="tokped_three">#595F6D</color>
+    <color name="tokped_four">#8A8E98</color>
+    <color name="tokped_five">#E02954</color>
+    <color name="tokped_six">#00AFD1</color>
+    <color name="tokped_seven">#00AA5B</color>
+
+</resources>

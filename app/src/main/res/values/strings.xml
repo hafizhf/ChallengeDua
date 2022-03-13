@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Challenge Dua</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  GOJEK STRINGs  -->
+    <string name="gojek_searchbar_hint"><![CDATA[Cari layanan, makanan, & tujuan]]></string>
+    <string name="gojek_balance">Rp109.048</string>
+    <string name="gojek_balance_history"><![CDATA[Klik & cek riwayat]]></string>
+    <string name="gojek_buttontext_bayar">Bayar</string>
+    <string name="gojek_buttontext_isisaldo">Isi Saldo</string>
+    <string name="gojek_buttontext_eksplor">Eksplor</string>
+    <string name="gojek_buttontext_goride">GoRide</string>
+    <string name="gojek_buttontext_gocar">GoCar</string>
+    <string name="gojek_buttontext_gofood">GoFood</string>
+    <string name="gojek_buttontext__gosend">GoSend</string>
+    <string name="gojek_buttontext_gomart">GoMart</string>
+    <string name="gojek_buttontext_gopulsa">GoPulsa</string>
+    <string name="gojek_buttontext_checkin">Check In</string>
+    <string name="gojek_buttontext_lainnya">Lainnya</string>
+    <string name="gojek_kds_1">193 XP lagi ada Harta Karun</string>
+    <string name="gojek_kds_2">Harta Karun bentar lagi hilang</string>
+    <string name="gojek_akses_cepat">Akses Cepat</string>
+    <string name="gojek_akscpt_1">Makanan terlaris di area saya</string>
+    <string name="gojek_akscpt_2">Restoran Terdekat</string>
+    <string name="gojek_ads_1">Festival idaman perempuan! 😍</string>
+    <string name="gojek_ads_2">Temukan kebutuhan cantik-mu hemat pakai GoPay dengan cashback 50%. Klik! 👈</string>
+    <string name="gojek_nav_beranda">Beranda</string>
+    <string name="gojek_nav_promo">Promo</string>
+    <string name="gojek_nav_pesanan">Pesanan</string>
+    <string name="gojek_nav_chat">Chat</string>
+
+    <!--  TOKOPEDIA STRINGs  -->
+    <string name="tokped_searchbar_hint">Cari ipad air 4</string>
+    <string name="tokped_dikirim_ke">Dikirim ke</string>
+    <string name="tokped_alamat">Alamat rumah Hafizh Firdaus</string>
+    <string name="tokped_balance">Rp123.456</string>
+    <string name="tokped_coins">345 Coins</string>
+
+
+</resources>

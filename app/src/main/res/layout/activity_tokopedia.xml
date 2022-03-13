@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TokopediaActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/tokped_one"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:gravity="center_vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="36dp"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <SearchView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:queryHint="Cari Ipad Air 4"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tokped_searchbar_hint"/>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tokped_icon_chat"
+                android:layout_marginStart="9dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tokped_icon_notification"
+                android:layout_marginStart="9dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tokped_icon_cart"
+                android:layout_marginStart="9dp"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/tokped_icon_menu"
+                android:layout_marginStart="9dp"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/tokped_background_top"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/tokped_icon_location"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tokped_dikirim_ke"
+                        android:fontFamily="@font/opensauceone_regular"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tokped_alamat"
+                        android:fontFamily="@font/opensauceone_bold"
+                        android:textSize="10sp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_vertical"
+                        tools:ignore="SmallSp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/tokped_icon_arrow_down"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="7dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/tokped_logo_gopay"
+                            android:layout_margin="6dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tokped_balance"
+                                android:fontFamily="@font/opensauceone_bold"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tokped_coins"
+                                android:fontFamily="@font/opensauceone_regular"
+                                android:textSize="10sp"
+                                tools:ignore="SmallSp" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@drawable/tokped_logo_member"
+                            android:layout_margin="6dp"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Member Silver"
+                                android:fontFamily="@font/opensauceone_bold"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="20 Kupon Baru"
+                                android:fontFamily="@font/opensauceone_regular"
+                                android:textSize="10sp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="9">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz1"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Official Store"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz2"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Lihat Semua"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz3"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Kebutuhan Harian"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz4"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Elektronik"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz5"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Top-Up &amp; Tagihan"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz6"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Office &amp; Stationery"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz7"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Keuangan"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz8"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Travel &amp;    Entertaiment"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_hz9"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Perlengkapan Pesta"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="127dp"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tokped_banner_1"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="6">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr1"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Bazar Hari Ini"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr2"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Live Shopping"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr3"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Tokopedia Seru"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr4"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Elektronik"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr5"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Bangga Lokal"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center_horizontal"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/tokped_icon_sr6"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:text="Promo di Bandung"
+                            android:fontFamily="@font/opensauceone_regular"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kejar Diskon Spesial"
+                android:fontFamily="@font/opensauceone_black"
+                android:textColor="@color/tokped_two"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berakhir dalam "
+                    android:fontFamily="@font/opensauceone_regular"
+                    android:textSize="10sp"
+                    android:id="@+id/berakhir_dalam"
+                    android:layout_marginEnd="5dp"
+                    android:layout_centerVertical="true"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/timer"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/berakhir_dalam"
+                    android:backgroundTint="@color/tokped_five"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="13dp"
+                            android:layout_height="13dp"
+                            android:layout_margin="3dp"
+                            android:src="@drawable/tokped_icon_timer" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/opensauceone_black"
+                            android:text="00 : 09 : 18"
+                            android:textAlignment="viewEnd"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/opensauceone_bold"
+                    android:text="Lihat Semua"
+                    android:textColor="@color/tokped_seven"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:backgroundTint="@color/tokped_six"
+                app:cardCornerRadius="0dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/tokped_background_kds"/>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:padding="15dp">
+
+                            <View
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="15dp"
+                                app:cardCornerRadius="5dp"
+                                android:backgroundTint="@color/transparent"/>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product2" />
+
+                                    <TextView
+                                        android:id="@+id/product_price"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_img"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginBottom="5dp"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:text="Rp 10.000"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp" />
+
+                                    <TextView
+                                        android:id="@+id/discount"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="13%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="̶R̶p̶ ̶1̶1̶.̶5̶0̶5̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8sp"
+                                        android:id="@+id/real_price"
+                                        android:layout_toEndOf="@id/discount"
+                                        android:layout_below="@id/product_price"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge"
+                                        android:layout_below="@id/discount"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_pro"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location"
+                                        android:layout_below="@id/discount"
+                                        android:layout_toEndOf="@id/merchant_badge"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jakarta Barat"
+                                        android:textSize="7.5sp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="94"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis"
+                                        android:layout_below="@id/selling_progress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product3" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 2.278.530"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp"
+                                        android:layout_marginStart="5dp"
+                                        android:id="@+id/product_price2"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_below="@+id/product_img2"/>
+
+                                    <TextView
+                                        android:id="@+id/discount2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price2"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="32%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="̶R̶p̶ ̶2̶4̶.̶0̶0̶0̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8dp"
+                                        android:id="@+id/real_price2"
+                                        android:layout_toEndOf="@id/discount2"
+                                        android:layout_below="@id/product_price2"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge2"
+                                        android:layout_below="@id/discount2"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_official"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location2"
+                                        android:layout_below="@id/discount2"
+                                        android:layout_toEndOf="@id/merchant_badge2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kab. Tangerang"
+                                        android:textSize="7.5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress2"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge2"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="78"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis2"
+                                        android:layout_below="@id/selling_progress2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product4" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 169.150"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp"
+                                        android:layout_marginStart="5dp"
+                                        android:id="@+id/product_price3"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_below="@+id/product_img3"/>
+
+                                    <TextView
+                                        android:id="@+id/discount3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price3"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="74%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="R̶p̶ ̶6̶5̶9̶.̶0̶0̶0̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8dp"
+                                        android:id="@+id/real_price3"
+                                        android:layout_toEndOf="@id/discount3"
+                                        android:layout_below="@id/product_price3"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge3"
+                                        android:layout_below="@id/discount3"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_official"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location3"
+                                        android:layout_below="@id/discount3"
+                                        android:layout_toEndOf="@id/merchant_badge3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kota Tangerang"
+                                        android:textSize="7.5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress3"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge3"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="84"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis3"
+                                        android:layout_below="@id/selling_progress3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 10.000"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp"
+                                        android:layout_marginStart="5dp"
+                                        android:id="@+id/product_price4"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_below="@+id/product_img4"/>
+
+                                    <TextView
+                                        android:id="@+id/discount4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price4"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="22%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="̶R̶p̶ ̶1̶2̶.̶9̶0̶0̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8dp"
+                                        android:id="@+id/real_price4"
+                                        android:layout_toEndOf="@id/discount4"
+                                        android:layout_below="@id/product_price4"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge4"
+                                        android:layout_below="@id/discount4"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_official"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location4"
+                                        android:layout_below="@id/discount4"
+                                        android:layout_toEndOf="@id/merchant_badge4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kota Tangerang"
+                                        android:textSize="7.5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress4"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge4"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="95"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis4"
+                                        android:layout_below="@id/selling_progress4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product5" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 10.000"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp"
+                                        android:layout_marginStart="5dp"
+                                        android:id="@+id/product_price5"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_below="@+id/product_img5"/>
+
+                                    <TextView
+                                        android:id="@+id/discount5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price5"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="28%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="̶R̶p̶ ̶1̶3̶̶.̶0̶0̶0̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8dp"
+                                        android:id="@+id/real_price5"
+                                        android:layout_toEndOf="@id/discount5"
+                                        android:layout_below="@id/product_price5"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge5"
+                                        android:layout_below="@id/discount5"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_pro"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location5"
+                                        android:layout_below="@id/discount5"
+                                        android:layout_toEndOf="@id/merchant_badge5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Jakarta Pusat"
+                                        android:textSize="7.5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress5"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge5"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="90"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis5"
+                                        android:layout_below="@id/selling_progress5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:id="@+id/product_img6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="100dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="5dp"
+                                        android:src="@drawable/tokped_kds_product6" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Rp 15.900"
+                                        android:fontFamily="@font/opensauceone_bold"
+                                        android:textColor="@color/black"
+                                        android:textSize="10sp"
+                                        android:layout_marginStart="5dp"
+                                        android:id="@+id/product_price6"
+                                        android:layout_marginBottom="5dp"
+                                        android:layout_below="@+id/product_img6"/>
+
+                                    <TextView
+                                        android:id="@+id/discount6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/product_price6"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:text="60%"
+                                        android:textColor="@color/tokped_five"
+                                        android:textSize="8dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="̶R̶p̶ ̶3̶9̶.̶7̶0̶0̶"
+                                        android:fontFamily="@font/opensauceone_regular"
+                                        android:textSize="8dp"
+                                        android:id="@+id/real_price6"
+                                        android:layout_toEndOf="@id/discount6"
+                                        android:layout_below="@id/product_price6"/>
+
+                                    <ImageView
+                                        android:id="@+id/merchant_badge6"
+                                        android:layout_below="@id/discount6"
+                                        android:layout_width="10dp"
+                                        android:layout_height="10dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:src="@drawable/tokped_badge_official"/>
+
+                                    <TextView
+                                        android:id="@+id/merchant_location6"
+                                        android:layout_below="@id/discount6"
+                                        android:layout_toEndOf="@id/merchant_badge6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Kota Depok"
+                                        android:textSize="7.5dp"
+                                        android:layout_marginTop="8dp"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/opensauceone_regular"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/selling_progress6"
+                                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="3dp"
+                                        android:layout_below="@+id/merchant_badge6"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginTop="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_marginBottom="3dp"
+                                        android:max="100"
+                                        android:progress="80"
+                                        android:progressTint="@color/tokped_five" />
+
+                                    <TextView
+                                        android:id="@+id/isHabis6"
+                                        android:layout_below="@id/selling_progress6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Segera Habis"
+                                        android:textSize="7sp"
+                                        android:layout_marginStart="6dp"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textColor="@color/tokped_five"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="100dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="7dp"
+                                app:cardCornerRadius="5dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <ImageView
+                                        android:id="@+id/kds_more"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/tokped_arrow_right"
+                                        android:layout_centerInParent="true"
+                                        android:layout_marginBottom="5dp"/>
+
+                                    <TextView
+                                        android:layout_below="@+id/kds_more"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Lihat Produk Lainnya"
+                                        android:textColor="@color/tokped_seven"
+                                        android:fontFamily="@font/opensauceone_black"
+                                        android:textSize="10dp"
+                                        android:textAlignment="center"
+                                        android:layout_centerHorizontal="true"/>
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spesial di Tokopedia hari ini"
+                    android:fontFamily="@font/opensauceone_black"
+                    android:textColor="@color/tokped_two"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/opensauceone_bold"
+                    android:text="Lihat Semua"
+                    android:textColor="@color/tokped_seven"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="122dp"
+                    android:src="@drawable/tokped_banner_sp1"
+                    android:layout_marginEnd="5dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="122dp"
+                    android:src="@drawable/tokped_banner_sp2"
+                    android:layout_marginBottom="1dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="122dp"
+                    android:src="@drawable/tokped_banner_sp3"
+                    android:layout_marginEnd="5dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_height="122dp"
+                    android:src="@drawable/tokped_banner_sp4"/>
+
+            </GridLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!--  BOTTOM NAVIGATION  -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:cardCornerRadius="0dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.4dp"
+            android:background="#DDDDDD"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="5"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tokped_nav_home"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/opensauceone_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tokped_nav_feed"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feed"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/opensauceone_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tokped_nav_official"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Official Store"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/opensauceone_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tokped_nav_wishlist"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wishlist"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/opensauceone_regular"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tokped_nav_transaksi"
+                    android:layout_marginBottom="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaksi"
+                    android:textSize="8sp"
+                    android:fontFamily="@font/opensauceone_regular"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
